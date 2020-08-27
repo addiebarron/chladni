@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>addie - chladni</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" href="/img/favicon.png" type="image/x-icon">
+
+<!-- Stylesheets -->
+<link rel='stylesheet' type='text/css' href='style.css'/>
+
+<!-- External Scripts -->
+<!-- p5.js -->
+<script src="https://cdn.jsdelivr.net/npm/p5" type="text/javascript" ></script>
+
+<!-- Local scripts -->
+<script src='chladni.js' type='text/javascript'></script>
+
+</head>
+
+<body>
+<div id="sliders">
+	<div>frequency parameters:</div>
+	<input id="mSlider" type="range" min="1" max="10" step="1" value="7">
+	<input id="nSlider" type="range" min="1" max="10" step="1" value="2">
+	<div>vibration strength:</div>
+	<input id="vSlider" type="range" min="0.01" max="0.1" step="0.01" value="0.02"> 
+	<div>number of particles:</div>
+	<input id="Nslider" type="range" min="1000" max="10000" step="1000" value="10000">
+</div>
+</body>
+
+</html>
