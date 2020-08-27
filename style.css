@@ -1,3 +1,47 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	color: white;
+	background: #191919;
+	font-family: monospace;
+	font-size: 14px;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	z-index: 2;
+}
+h1 {
+	font-size: 18px;
+	margin-top: 0;
+}
+#settings {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	padding-top: 10px;
+}
+input {
+	margin: 5px 0;
+}
+fieldset>input {
+	width: 15vw;
+	min-width: 200px;
+}
+
 canvas {
 	position: absolute;
 	top: 50%;
@@ -7,24 +51,14 @@ canvas {
 	max-height: 100vw;
 }
 
-#sliders {
+footer {
 	position: fixed;
-	background-color: rgba(0,0,0,0.4);
-	border-radius: 5px;
-	margin: 10px;
-	z-index: 2;
 	top: 0;
-	left: 0;
-	padding: 10px;
-	color: white;
-	display: flex;
-	flex-direction: column;
+	right: 0;
+	margin: 10px;
+	opacity: 0.7;
+	font-size: 18px;
 }
-
-html, body {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	background: #191919;
-	font-family: "arial";
+footer:hover {
+	opacity: 1;
 }
